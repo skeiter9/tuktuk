@@ -11,6 +11,7 @@ bck_lightest    = #fff
 bck_light       = #f7f7f7
 bck_dark        = #282828
 bck_darkest     = #181818
+bck_sky         = #5998BE
 
 
 body
@@ -69,6 +70,19 @@ body
       background-color: color_accept
     &.cancel
       background-color: color_cancel
+    &.sky
+      background-color:bck_sky
+
+    /*GRADIANTS*/  
+  & .gradiant
+    &.sky
+      gr-lineal(#5998be,#a6d5e9) 
+    /*Image background */
+  & .image 
+      &.pattern-dark
+          background-image: url('../../../images/patterns/pattern_183.png')
+      &.pattern-dark2
+          background-image: url('../../../images/patterns/pattern_193.png')  
 
   /* ====================== TEXT ====================== */
   & .text

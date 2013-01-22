@@ -41,3 +41,12 @@ transition-delay()
 
 transform()
   vendor('transform', arguments)
+/*======================== GRADIANTS ============================*/
+gr-lineal(up,down)
+  background: up; /* Old browsers */
+  background: -moz-linear-gradient(top, up 0%, down 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,up), color-stop(100%,down)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, up 0%,down 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, up 0%,down 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, up 0%,down 100%); /* IE10+ */
+  background: linear-gradient(to bottom, up 0%,down 100%); /* W3C */

@@ -24,7 +24,10 @@ body > header nav a:hover,
 body > header nav a:active {
   color: #fff;
 }
-body > section.underline {
+body > section.underline.color.white {
+  border-bottom: solid #fff 1px;
+}
+body > section.underline.color.default {
   border-bottom: solid #bbb 1px;
 }
 body hr {
@@ -75,6 +78,42 @@ body .bck.accept {
 body .bck.cancel {
   background-color: #ee6557;
 }
+body .bck.sky {
+  background-color: #5891bc;
+}
+body .bck.green {
+  background-color: #2d9e36;
+}
+body .gradiant.sky {
+  background: #5998be;
+/* Old browsers */
+  background: -moz-linear-gradient(top, #5998be 0%, #a6d5e9 100%);
+/* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5998be), color-stop(100%, #a6d5e9));
+/* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #5998be 0%, #a6d5e9 100%);
+/* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #5998be 0%, #a6d5e9 100%);
+/* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #5998be 0%, #a6d5e9 100%);
+/* IE10+ */
+  background: linear-gradient(to bottom, #5998be 0%, #a6d5e9 100%);
+/* W3C */
+}
+body .image.pattern-dark {
+  -webkit-background-image: url("../../images/patterns/pattern_183.png");
+  -moz-background-image: url("../../images/patterns/pattern_183.png");
+  -ms-background-image: url("../../images/patterns/pattern_183.png");
+  -o-background-image: url("../../images/patterns/pattern_183.png");
+  background-image: url("../../images/patterns/pattern_183.png");
+}
+body .image.pattern-dark2 {
+  -webkit-background-image: url("../../images/patterns/pattern_193.png");
+  -moz-background-image: url("../../images/patterns/pattern_193.png");
+  -ms-background-image: url("../../images/patterns/pattern_193.png");
+  -o-background-image: url("../../images/patterns/pattern_193.png");
+  background-image: url("../../images/patterns/pattern_193.png");
+}
 body .text.shadow {
   -webkit-text-shadow: 0 1px 1px rgba(0,0,0,0.5);
   -moz-text-shadow: 0 1px 1px rgba(0,0,0,0.5);
@@ -96,6 +135,12 @@ body .text.color.accept {
 }
 body .text.color.cancel {
   color: #ee6557;
+}
+body .text.color.black {
+  color: #000;
+}
+body .text.color.yellow {
+  color: #f3d316;
 }
 body form input[type="text"],
 body .form input[type="text"],

@@ -6,12 +6,15 @@ color = #16A6B6
 color_secondary = #BFBFBF
 color_cancel    = #EE6557
 color_accept    = #3FB58E
+color_black     = #000000
+color_yellow    = #F3D316
 
 bck_lightest    = #fff
 bck_light       = #f7f7f7
 bck_dark        = #282828
 bck_darkest     = #181818
-bck_sky         = #5998BE
+bck_sky         = #5891BC
+bck_green       = #2D9E36
 
 
 body
@@ -31,8 +34,11 @@ body
 
   & > section
     &.underline
-      border-bottom: solid #bbb 1px
-
+      &.color 
+        &.white
+          border-bottom: solid #fff 1px
+        &.default
+          border-bottom: solid #bbb 1px
 
   & hr
     border-style: solid
@@ -72,6 +78,8 @@ body
       background-color: color_cancel
     &.sky
       background-color:bck_sky
+    &.green
+      background-color:bck_green
 
     /*GRADIANTS*/  
   & .gradiant
@@ -80,9 +88,9 @@ body
     /*Image background */
   & .image 
       &.pattern-dark
-          background-image: url('../../../images/patterns/pattern_183.png')
+          background-image: url('../../images/patterns/pattern_183.png')
       &.pattern-dark2
-          background-image: url('../../../images/patterns/pattern_193.png')  
+          background-image: url('../../images/patterns/pattern_193.png')  
 
   /* ====================== TEXT ====================== */
   & .text
@@ -99,6 +107,10 @@ body
         color: color_accept
       &.cancel
         color: color_cancel
+      &.black
+        color: color_black
+      &.yellow
+        color: color_yellow
 
 
   /* ====================== FORM ====================== */

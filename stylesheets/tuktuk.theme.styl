@@ -1,11 +1,11 @@
 @import "__vendor.styl"
 
 /* ====================== FONT-FACE ====================== */
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700")
+
 color = #16A6B6
 color_secondary = #BFBFBF
 color_cancel    = #EE6557
-color_accept    = #3FB58E
+color_accept    = #2D9E36
 color_black     = #000000
 color_yellow    = #F3D316
 
@@ -16,24 +16,31 @@ bck_darkest     = #181818
 bck_sky         = #5891BC
 bck_green       = #2D9E36
 
+redounded       = 10px 
 
 body
   color: #000
   font-size: 1em
   line-height: 1.2
-  font-family: "Source Sans Pro"
+  font-family: "overlock"
   font-weight: 300
 
   & > header
     &.solid
       background: #111
+    &.underline
+      &.color 
+        &.white
+          border-bottom: solid #fff 1px
     & nav a
-      color: rgba(255,255,255,0.5)
+      color: rgba(255,255,255,0.6)
       &:hover, &:active
         color: #fff
 
-  & > section
+  & > section 
     &.underline
+      &.right
+        border-right : 1px solid #fff
       &.color 
         &.white
           border-bottom: solid #fff 1px
@@ -53,8 +60,8 @@ body
       &, & > .icon
         color: #888
       &:hover, &:active, &.active
-        color: #000
-        background: white
+        color: #fff
+        background: black
         & > .icon
           color: #000
       &:last-child
@@ -80,6 +87,14 @@ body
       background-color:bck_sky
     &.green
       background-color:bck_green
+    &.line
+      border-right : 1px solid #fff
+      min-height : 260px 
+    &.white
+      background-color: #fff
+    &.rounded
+      border-radius: 15px;
+
 
     /*GRADIANTS*/  
   & .gradiant
@@ -121,13 +136,13 @@ body
       border: 1px solid #ddd
       box-shadow inset 0 1px 2px rgba(0, 0, 0, 0.1)
       &.error, &:required
-        border-color: color_cancel
-        color: color_cancel
-        background-color: rgba(198, 15, 19, 0.1)
+        //border-color: color_cancel
+        //color: color_cancel
+        //background-color: rgba(198, 15, 19, 0.1)
       &:focus
-        background: #FAFAFA;
-        border-color: #B3B3B3;
-        color: rgba(0, 0, 0, 0.75)
+        //background: #FAFAFA;
+        //border-color: #B3B3B3;
+        //color: rgba(0, 0, 0, 0.75)
 
   /* ====================== TABLE ====================== */
   & table
@@ -166,7 +181,10 @@ body
       background-color: color_cancel
     &.transparent
       background: none !important
-
+    &.green
+      background-color : bck_green
+    &.rounded
+      border-radius: redounded ;
 
   /* ====================== BUTTONS ====================== */
   // & :not(nav) > a:not(.button)
@@ -175,3 +193,7 @@ body
     opacity: 0.9
     &:hover, &:active
       opacity: 1.0
+
+/*************************ROUNDED*******************************/
+.min-heigth_60px
+  min-height : 60px 

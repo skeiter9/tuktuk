@@ -127,11 +127,25 @@ body .image.pattern-dark {
   background-image: url("../../images/patterns/pattern_183.png");
 }
 body .image.pattern-dark2 {
-  -webkit-background-image: url("../../images/patterns/pattern_193.png");
-  -moz-background-image: url("../../images/patterns/pattern_193.png");
-  -ms-background-image: url("../../images/patterns/pattern_193.png");
-  -o-background-image: url("../../images/patterns/pattern_193.png");
-  background-image: url("../../images/patterns/pattern_193.png");
+  -webkit-background-image: url("../../images/patterns/black_thread.png");
+  -moz-background-image: url("../../images/patterns/black_thread.png");
+  -ms-background-image: url("../../images/patterns/black_thread.png");
+  -o-background-image: url("../../images/patterns/black_thread.png");
+  background-image: url("../../images/patterns/black_thread.png");
+}
+body .image.pattern-dark3 {
+  -webkit-background-image: url("../../images/patterns/pattern-dark-3.png");
+  -moz-background-image: url("../../images/patterns/pattern-dark-3.png");
+  -ms-background-image: url("../../images/patterns/pattern-dark-3.png");
+  -o-background-image: url("../../images/patterns/pattern-dark-3.png");
+  background-image: url("../../images/patterns/pattern-dark-3.png");
+}
+body .image.pattern-dark4 {
+  -webkit-background-image: url("../../images/patterns/pattern-dark-4.png");
+  -moz-background-image: url("../../images/patterns/pattern-dark-4.png");
+  -ms-background-image: url("../../images/patterns/pattern-dark-4.png");
+  -o-background-image: url("../../images/patterns/pattern-dark-4.png");
+  background-image: url("../../images/patterns/pattern-dark-4.png");
 }
 body .text.shadow {
   -webkit-text-shadow: 0 1px 1px rgba(0,0,0,0.5);
@@ -193,6 +207,36 @@ body .form textarea {
   -ms-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
   -o-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+body form input[type="text"].rounded,
+body .form input[type="text"].rounded,
+body form input[type="password"].rounded,
+body .form input[type="password"].rounded,
+body form input[type="date"].rounded,
+body .form input[type="date"].rounded,
+body form input[type="datetime"].rounded,
+body .form input[type="datetime"].rounded,
+body form input[type="email"].rounded,
+body .form input[type="email"].rounded,
+body form input[type="number"].rounded,
+body .form input[type="number"].rounded,
+body form input[type="search"].rounded,
+body .form input[type="search"].rounded,
+body form input[type="tel"].rounded,
+body .form input[type="tel"].rounded,
+body form input[type="time"].rounded,
+body .form input[type="time"].rounded,
+body form input[type="url"].rounded,
+body .form input[type="url"].rounded,
+body form select.rounded,
+body .form select.rounded,
+body form textarea.rounded,
+body .form textarea.rounded {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
 }
 body table {
   background: #fff;

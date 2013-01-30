@@ -1,6 +1,42 @@
+header
+	max-height 50px
 .img_flex
 	width : 100%
 
+.no-hidden
+	overflow:visible !important
+.tittle
+	position relative
+	left -12%
+.lazo
+	position relative
+	z-index 6
+	min-height 150px
+	&:before
+		content: ' ' 
+		position: absolute
+		display block 
+		height: 45px
+		border-width: 50px
+		border-style: solid 
+		border-color: #232323 #232323 transparent 
+
+	&:after
+		content: ' ' 
+		position: absolute 
+		width: 0 
+		height: 0 
+		left: 0px 
+		top: 100% 
+		border-width: 5px 10px 
+		border-style: solid 
+		border-color: #666 #666 transparent transparent 
+
+	& img 
+		top 10px
+		position relative
+		left 15px
+    
 .fix
 	overflow : hidden
 

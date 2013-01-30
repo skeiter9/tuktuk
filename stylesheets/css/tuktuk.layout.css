@@ -97,12 +97,12 @@ body * {
   box-sizing: border-box;
 }
 body > header {
-  line-height: h;
+  line-height: 50px;
   position: relative;
 }
 body > header .logo {
   font-size: 2em;
-  line-height: h;
+  line-height: 50px;
 }
 body > header nav {
   font-size: 0.95em;

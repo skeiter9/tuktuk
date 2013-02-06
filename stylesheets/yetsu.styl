@@ -1,7 +1,29 @@
+@import "__vendor.styl"
 header
 	max-height 50px
+
+.logotipo
+	background-color #ffffff
+	position relative
+
+.reds
+	//background-color #ffffff
+	&.fb
+		color #3B5998
+	&.youtube
+		color #9E2623
+	&.gplus
+		color #BB3317
+
 .img_flex
 	width : 100%
+	-webkit-box-sizing:border-box
+	-moz-box-sizing:border-box
+	-o-box-sizing:border-box
+	-ms-box-sizing:border-box
+	box-sizing:border-box
+.box-sizing
+	box-sizing(border-box)
 
 .no-hidden
 	overflow:visible !important
@@ -75,4 +97,30 @@ header
 
 #off-air-contact
 	display : none 
+.marco-foto
+	&.rounded
+		border-radius 15px
+	&.white
+		border: 2px dashed #fff;
+	&.black
+		border 2px dashed #000000
+	&.theme
+		 border: 3px dashed #16A6B6;
+
+.rounded
+	border-radius 15px
+.rounded-2
+	border-radius 0 0 15px 15px !important
+
+/***************** Web yetsu ****************************/
+.perfect-rounded
+	border-radius 50%;
+.border-pic 
+	border 4px solid #16A6B6 
+.box-num
+	width 70px
+	height 70px
+.box-center
+	display block
+	margin 0 auto 
 

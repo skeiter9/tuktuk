@@ -1,8 +1,26 @@
 header {
   max-height: 50px;
 }
+.logotipo {
+  background-color: #fff;
+  position: relative;
+}
+.reds.fb {
+  color: #3b5998;
+}
+.reds.youtube {
+  color: #9e2623;
+}
+.reds.gplus {
+  color: #bb3317;
+}
 .img_flex {
   width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .no-hidden {
   overflow: visible !important;
@@ -80,4 +98,22 @@ header {
 }
 #off-air-contact {
   display: none;
+}
+.marco-foto.rounded {
+  border-radius: 15px;
+}
+.marco-foto.white {
+  border: 2px dashed #fff;
+}
+.marco-foto.black {
+  border: 2px dashed #000;
+}
+.marco-foto.theme {
+  border: 3px dashed #16a6b6;
+}
+.rounded {
+  border-radius: 15px;
+}
+.rounded-2 {
+  border-radius: 0 0 15px 15px !important;
 }

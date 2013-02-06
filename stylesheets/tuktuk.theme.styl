@@ -8,6 +8,7 @@ color_cancel    = #EE6557
 color_accept    = #2D9E36
 color_black     = #000000
 color_yellow    = #F3D316
+color_html5     = #E44D26
 
 bck_lightest    = #fff
 bck_light       = #f7f7f7
@@ -15,6 +16,7 @@ bck_dark        = #282828
 bck_darkest     = #181818
 bck_sky         = #5891BC
 bck_green       = #2D9E36
+
 
 redounded       = 10px 
 
@@ -36,6 +38,7 @@ body
       color: rgba(255,255,255,0.6)
       &:hover, &:active
         color: #fff
+    
 
   & > section 
     &.underline
@@ -57,11 +60,13 @@ body
   & nav
     &.group a
       border-left: solid #ccc 1px
+      padding-top 15px
+      padding-bottom 15px
       &, & > .icon
         color: #888
       &:hover, &:active, &.active
         color: #fff
-        background: black
+        background: #000
         & > .icon
           color: #000
       &:last-child
@@ -92,29 +97,46 @@ body
       min-height : 260px 
     &.white
       background-color: #fff
+    &.sky-blue
+      background-color #8AEAF8
     &.rounded
       border-radius: 15px;
-
-
+    &.menu-consama
+      background-image: url('../../images/patterns/pattern-dark-3.png')  
+    &.sky-tag-yetsu
+      background-color #CDF3FE
+    &.glass
+      background-color : rgba(146, 142, 138, 0.5)
     /*GRADIANTS*/  
-  & .gradiant
-    &.sky
-      gr-lineal(#5998be,#a6d5e9) 
-    /*Image background */
-  & .image 
+    &.gradiant
+      &.sky
+        gr-lineal(#5998be,#a6d5e9) 
+      &.yetsu
+        gr-lineal( #ffb07c, #ff7400)
+      /*Image background */
+    &.image 
       &.pattern-dark
-          background-image: url('../../images/patterns/pattern_183.png')
+        background-image: url('../../yetsu-2013/images/patterns/pattern_183.png')
       &.pattern-dark2
-          background-image: url('../../images/patterns/black_thread.png')
+        background-image: url('../../yetsu-2013/images/patterns/black_thread.png')
       &.pattern-dark3
-          background-image: url('../../images/patterns/pattern-dark-3.png')    
+        background-image: url('../../yetsu-2013/images/patterns/pattern-dark-3.png')    
       &.pattern-dark4
-          background-image: url('../../images/patterns/pattern-dark-4.png')  
+        background-image: url('../../yetsu-2013/images/patterns/pattern-dark-4.png')
+      &.pattern-dark5
+        background-image: url('../../yetsu-2013/images/patterns/pattern-dark-5.png')  
+      // background cover
+      &.landing-yetsu
+        background: url('../../images/landing-yetsu.jpg') no-repeat center center fixed 
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
 
   /* ====================== TEXT ====================== */
   & .text
     &.shadow
-      text-shadow 0 1px 1px rgba(0,0,0,0.5)
+      text-shadow 1px 1px 1px rgba(0,0,0,0.9)
     &.color
       &.white
         color: #fff
@@ -130,6 +152,10 @@ body
         color: color_black
       &.yellow
         color: color_yellow
+      &.html5
+        color : color_html5 
+      &.android
+        color #97C03E
 
 
   /* ====================== FORM ====================== */
@@ -191,6 +217,8 @@ body
       background-color : bck_green
     &.rounded
       border-radius: redounded 
+    &.theme-2
+      background-color #0B717E
 
   /* ====================== BUTTONS ====================== */
   // & :not(nav) > a:not(.button)

@@ -106,7 +106,7 @@ body
     &.sky-tag-yetsu
       background-color #CDF3FE
     &.glass
-      background-color : rgba(146, 142, 138, 0.5)
+      background : url("../images/patterns/pattern_004.png") repeat #C6C4C0
     /*GRADIANTS*/  
     &.gradiant
       &.sky
@@ -135,6 +135,8 @@ body
 
   /* ====================== TEXT ====================== */
   & .text
+    &.espaced
+      line-height 1.5em
     &.shadow
       text-shadow 1px 1px 1px rgba(0,0,0,0.9)
     &.color
@@ -156,7 +158,10 @@ body
         color : color_html5 
       &.android
         color #97C03E
-
+  /* ===================== BORDER=======================
+  & .border
+    & .theme
+      border : 2px solid color*/
 
   /* ====================== FORM ====================== */
   & form, .form
@@ -180,14 +185,15 @@ body
   & table
     background: #fff
     color: #333
-    border: 1px solid #ddd;
-    border-radius 3px
+    border: 1px solid #8F8F8D;
+    border-radius 5px
     & tr
       &:nth-child(even) td
         background-color: #F9F9F9
     & th
-      background-color: #eee
-      color: #222
+      background-color: rgba(22, 166, 182, 0.9)
+      color: #F8FF00;
+      text-shadow(1px 1px 2px #000000 )
     & td
       &.highlight
         background-color: color !important

@@ -14,6 +14,14 @@ header
 		color #9E2623
 	&.gplus
 		color #BB3317
+	&.twitter
+		color #1BB2E9
+	&.pinterest
+		color #CD2126
+	&.github
+		color #333333
+	&.github_white
+		color #ffffff
 
 .img_flex
 	width : 100%
@@ -108,19 +116,40 @@ header
 		 border: 3px dashed #16A6B6;
 
 .rounded
-	border-radius 15px
+	border-radius(15px)
 .rounded-2
 	border-radius 0 0 15px 15px !important
-
+.rounded-bottom
+	border-radius(0 0 15px 15px)
+.rounded-top
+	border-radius(15px 15px 0 0)
+.rounded-pic-curso
+	border-radius(0 15px 15px 15px)
+.rounded-course
+	border-radius(30px)
+.rounded-left-teacher
+	border-radius(80px 15px 0 15px )
+.rounded-right-teacher
+	border-radius(15px 80px 15px 0)
 /***************** Web yetsu ****************************/
 .perfect-rounded
 	border-radius 50%;
 .border-pic 
 	border 4px solid #16A6B6 
+
 .box-num
-	width 70px
-	height 70px
+	width 60px
+	height 60px
+	z-index 2
+	position relative
 .box-center
 	display block
 	margin 0 auto 
-
+.option-menu
+	width 25px
+	height 25px
+	border 1px solid rgba(0,0,0,.8)
+	&.select
+		box-shadow(0 0 1px 2px black inset)
+#footerHome
+	position relative

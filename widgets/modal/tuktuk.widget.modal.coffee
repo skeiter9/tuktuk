@@ -4,7 +4,6 @@ TukTuk =
 
 window.TukTuk = TukTuk
 
-
 TukTuk.Modal = ((tk, undefined_) ->
 
   lock = undefined

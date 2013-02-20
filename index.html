@@ -22,17 +22,27 @@
     <!-- TUKTUK.WIDGETS -->
     <link rel="stylesheet" href="package/widgets/tuktuk.widget.icon.css">
     <link rel="stylesheet" href="package/widgets/tuktuk.widget.modal.css">
+    <link rel="stylesheet" href="widgets/jPanelMenu/css/jmenu.css">
 </head>
 
 <body>
     <!-- ========================== HEADER ========================== -->
-    <header class="bck darkest text color white">
-        <div class="row ">
+    <header class="bck darkest  ">
+        <div class="row text color white">
             <div class="column_3">
                 <a href="http://tuktuk.tapquo.com" class="logo text normal color white">tuk<span class="text book">tuk</span></a>
             </div>
-            <nav class="column_6 offset_3 text normal right">
-                <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ftuktuk.tapquo.com%2F&text=Tuktuk%20-%20Simple%20(but%20powerful)%20RWD%20Framework&tw_p=tweetbutton&url=http%3A%2F%2Ftuktuk.tapquo.com%2F"><span class="icon twitter"></span>Share</a>
+            <div class="column_3" id="jmenu">
+                <a href="#" class="menu-trigger">Menu</a>
+                <nav id="menu-mobile">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#test">Test</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="column_6  text normal right">
+                <a href="#"><span class="icon twitter"></span>Share</a>
                 <a href="http://tuktuk.tapquo.com/download/tuktuk.0.3.zip" class="button small"><span class="icon download"></span>Download</a>
             </nav>
         </div>
@@ -40,8 +50,8 @@
 
 
     <!-- ========================== LANDING ========================== -->
-    <section class="landing bck dark text color white  center">
-        <div class="row">
+    <section class="landing bck dark  center">
+        <div class="row text color white center">
             <div class="column_10 offset_1">
                 <h1 class="text normal">tuk<span class="text thin">tuk</span></h1>
 
@@ -605,18 +615,18 @@
 
         <div class="row margin_bottom">
             <div class="column_4 offset_4 text center white">
-                <img src="http://tapquo.com/images/social/soyjavi.jpeg" class="responsive rounded margin_bottom"/>
-                <br/>
-                <a href="https://twitter.com/soyjavi" class="twitter-follow-button " data-show-count="true" data-dnt="true">Follow @soyjavi</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <!--<img src="http://tapquo.com/images/social/soyjavi.jpeg" class="responsive rounded margin_bottom"/>
+                <br/>-->
+                <!--<a href="https://twitter.com/soyjavi" class="twitter-follow-button " data-show-count="true" data-dnt="true">Follow @soyjavi</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
         </div>
         </div>
     </section>
 
 
     <!-- ========================== FOOTER ========================== -->
-    <footer class="bck darkest text color white">
-        <div class="row margin_top margin_bottom">
+    <footer class="bck darkest ">
+        <div class="row margin_top margin_bottom text color white">
             <div class="column_4">
                 <p class="text bold">Made by TAPQUO</p>
                 <small>We are a mobile user experiences company located in Bilbao, Spain. We've put over 12 years of experience building products.</small>
@@ -642,8 +652,8 @@
     </footer>
 
     <!-- TUKTUK.WIDGETS -->
-    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="jquery-1.8.3.min.js"></script>
     <script src="package/widgets/tuktuk.widget.modal.js"></script>
-
+    <script src="widgets/jPanelMenu/js/jPanelMenu-1.1.0.js"></script>
 </body>
 </html>

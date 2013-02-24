@@ -1,5 +1,3 @@
-@charset "UTF-8";
- 
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -31,63 +29,15 @@
   text-shadow: 0 -1px 1px #222;
   color: #f7f7f7
 }
-.jPanelMenu .main {
-  background: #317ca2;
-  box-shadow: 0 1px 5px rgba(34,34,34,0.5);
-  position: fixed;
-  top: 0;
-  width: 85%;
-  max-width: none;
-  height: 50px;
-  margin: 0;
-  padding: 0 7.5%;
-  border-bottom: 1px solid #1b5572;
-  z-index: 10
-}
-.jPanelMenu .main .logo a,.jPanelMenu .main .menu-trigger {
+.jPanelMenu .main .menu-trigger {
   display: block;
   height: 100%;
   text-shadow: 0 -1px 1px #222;
   line-height: 50px;
   color: #f7f7f7
 }
-.jPanelMenu .main .logo {
-  font-family: "museo-sans","Museo Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  font-weight: 700;
-  float: none;
-  width: 60%;
-  margin: 0 auto
-}
-.jPanelMenu .main .logo a {
-  position: static
-}
-.jPanelMenu .main .logo a: before {
-  display: none !important
-}
-.jPanelMenu .main .menu-trigger {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0 1.5em;
-  font-size: 1.2em;
-  line-height: 57.5px
-}
-.jPanelMenu .main .menu-trigger: active {
-  text-shadow: 0 -1px 1px #222,0 0 50px #f7f7f7
-}
-.jPanelMenu .main nav {
-  text-indent: -9999px
-}
 #jPanelMenu-menu {
   background: #3b3b3b;
-  transition: all 3s linear 2s;
-  /* Firefox 4 */
-  -moz-transition:all 3s linear 2s;
-  /* Safari and Chrome */
-  -webkit-transition:all 3s linear 2s;
-  /* Opera */
-  -o-transition:all 3s linear 2s;
 }
 #jPanelMenu-menu ul {
   border-bottom: 1px solid #484848
@@ -116,12 +66,5 @@
 }
 .jPanelMenu-panel {
   box-shadow: 0 0 25px #222;
-  transition: all 3s linear 2s;
-  /* Firefox 4 */
-  -moz-transition:all 3s linear 2s;
-  /* Safari and Chrome */
-  -webkit-transition:all 3s linear 2s;
-  /* Opera */
-  -o-transition:all 3s linear 2s;
 }
 

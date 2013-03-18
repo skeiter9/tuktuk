@@ -26,6 +26,7 @@ body .bck.white{background-color:#fff}
 body .bck.sky-blue{background-color:#8aeaf8}
 body .bck.rounded{-webkit-border-radius:15px;-moz-border-radius:15px;-ms-border-radius:15px;-o-border-radius:15px;border-radius:15px}
 body .bck.menu-consama{-webkit-background-image:url("../../images/patterns/pattern-dark-3.png");-moz-background-image:url("../../images/patterns/pattern-dark-3.png");-ms-background-image:url("../../images/patterns/pattern-dark-3.png");-o-background-image:url("../../images/patterns/pattern-dark-3.png");background-image:url("../../images/patterns/pattern-dark-3.png")}
+body .bck.consama{background-color:url("../images/pattern-consama.png")}
 body .bck.sky-tag-yetsu{background-color:#cdf3fe}
 body .bck.glass{background:url("../images/pattern_004.png") repeat #c6c4c0}
 body .bck.gradiant.sky{background:#5998be;background:-moz-linear-gradient(top,#5998be 0%,#a6d5e9 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#5998be),color-stop(100%,#a6d5e9));background:-webkit-linear-gradient(top,#5998be 0%,#a6d5e9 100%);background:-o-linear-gradient(top,#5998be 0%,#a6d5e9 100%);background:-ms-linear-gradient(top,#5998be 0%,#a6d5e9 100%);background:linear-gradient(to bottom,#5998be 0%,#a6d5e9 100%);}

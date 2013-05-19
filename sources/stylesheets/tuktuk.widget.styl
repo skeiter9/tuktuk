@@ -1,0 +1,113 @@
+@import "__constants.styl"
+
+.scroll
+  overflow-x: hidden
+  overflow-y: scroll
+  -webkit-overflow-scrolling: touch
+  -webkit-box-flex: 1
+
+  &.horizontal
+    overflow-x: scroll
+    overflow-y: hidden
+    white-space: nowrap
+
+.clear
+  clear: both
+.on-left
+  float: left
+.on-right
+  float: right
+.block
+  display: block
+.inline
+  display: inline-block
+.none
+  display: none
+
+.margin-none
+  margin: 0
+.margin
+  margin: AIR
+.margin-left
+  margin-left: AIR
+.margin-right
+  margin-right: AIR
+.margin-top
+  margin-top: AIR
+.margin-bottom
+  margin-bottom: AIR
+
+.padding-none
+  padding: 0
+.padding
+  padding: AIR
+.padding-left
+  padding-left: AIR
+.padding-right
+  padding-right: AIR
+.padding-top
+  padding-top: AIR
+.padding-bottom
+  padding-bottom: AIR
+
+
+/* ================== IMAGE & MEDIA ================== */
+div.img
+  height: 64px
+  &.h128
+    height: 128px
+  &.h256
+    height: 256px
+  &.h512
+    height: 512px
+
+img
+  border: 0
+  -ms-interpolation-mode: bicubic
+
+  &.responsive
+    width: 100%
+    height: auto
+    &.vertical
+      height: 100%
+      width: auto
+    &.rounded
+      border-radius 50%
+
+/* ================== TAGs ================== */
+:not(.icon).tag
+  position: relative
+  top: -2px
+  padding: 1px 3px
+  font-weight: bold !important
+  font-size: 9px !important
+  text-transform: uppercase
+
+hr
+  border: 0
+  height: 1px
+  margin: 0px
+
+/* ====================== CONTROLS ====================== */
+[data-tuktuk=totals]
+  display-box()
+  box-pack(justify)
+  text-align: center
+  list-style: none
+
+  & > *
+    box-flex(0)
+    & > strong
+      display: block
+      font-size: 1.8em
+      line-height: font-size-tiny
+    & > small
+      text-transform: uppercase
+      font-size: font-size-tiny
+
+[data-tuktuk=buttons]
+  display-box()
+  box-pack(justify)
+  & > *
+    box-flex(0)
+    display: inherit

@@ -1,6 +1,5 @@
-@import "__vendor.styl"
 @import "__constants.styl"
-@import url(http://fonts.googleapis.com/css?family=Capriola);
+@import url('http://fonts.googleapis.com/css?family=Capriola');
 //@import url(http://fonts.googleapis.com/css?family=Artifika); Artifika
 //@import url(http://fonts.googleapis.com/css?family=Marko+One); Marko One
 //@import url(http://fonts.googleapis.com/css?family=Quando);
@@ -12,18 +11,19 @@ SECONDARY   = #BFBFBF
 SUCCESS     = #EE6557
 ALERT       = #E74C3C
 /* ========== COLOR & BACKGROUNDS ====================== */
+LIGHT       = #f7f7f7
+DARK        = #282828
 COLOR       = #34495e
+
 BLACK       = #000
 WHITE       = #fff
 YELLOW      = #F5D908
 ORANGE      = #E44D26
-LIGHT       = #f7f7f7
-DARK        = #282828
 GRAY        = #929292
 SKY         = #00A3EE
 GREEN       = #17A768
 PINK        = #D80351
-BLUE        = #F1601D
+BLUE        = #33559E
 BROW        = #2C1E1E
 PURPLE      = #501D50
 TURQUIOSE   = #1FC7FF
@@ -87,7 +87,32 @@ body
       background-color: THEME
     &.alert
       background-color: ALERT !important
-
+    &.black
+      background-color: BLACK
+    &.white
+      background-color: WHITE
+    &.yellow
+      background-color: YELLOW
+    &.orange
+      background-color: ORANGE
+    &.gray 
+      background-color: GRAY
+    &.sky
+      background-color: SKY
+    &.green
+      background-color: GREN
+    &.pink
+      background-color: PINK
+    &.blue
+      background-color: BLUE
+    &.brow 
+      background-color: BROW
+    &.purple 
+      background-color: PURPLE
+    &.turquiose
+      background-color: TURQUIOSE 
+    &.lime 
+      background-color: LIME
     &.theme, &.alert
       color: WHITE
 

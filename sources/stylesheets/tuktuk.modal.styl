@@ -1,4 +1,3 @@
-@import "__constants.styl"
 
 padding = 12px
 
@@ -15,12 +14,10 @@ padding = 12px
 
   & header, footer, article
     padding: padding
-
   & article
-    box-flex(1)
+    box-flex() //fix
       & [class^="column_"]
         margin: 0px !important
-
   &.active
     transform translateY(0%)
     opacity: 1

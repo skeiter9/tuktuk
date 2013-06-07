@@ -1,0 +1,63 @@
+@import "__constants.styl"
+//@import 'tuktuk.boxes.styl'
+@import 'tuktuk.button.styl'
+//@import 'tuktuk.flexbox.styl'
+@import 'tuktuk.font.styl'
+//@import 'tuktuk.form.styl'
+@import 'tuktuk.grid.styl'
+@import 'tuktuk.layout.styl'
+
+//@import 'tuktuk.list.styl'
+//@import 'tuktuk.media.styl'
+@import 'tuktuk.nav.styl'
+//@import 'tuktuk.scroll.styl'
+//@import 'tuktuk.table.styl'
+//@import 'tuktuk.tip.styl'
+//@import 'tuktuk.modal.styl'
+@import 'tuktuk.widget.styl' //img responsive , margin-top 
+@import '../themes/theme.consama.styl'
+@import '../components/lungo.icon/lungo.icon.styl'
+
+/* ====================== Css Consama====================== */
+.bck
+	&.consama-body
+		background-image url('https://dl.dropboxusercontent.com/u/11334564/pattern-consama.png')
+.submenu
+	min-height 61px
+.lazo
+	position:relative
+	z-index:6
+	min-height:150px
+
+.lazo
+	&:before
+		content:' '
+		position:absolute
+		display:block
+		height:45px
+		border-width:50px
+		border-style:solid
+		border-color:#232323 #232323 transparent
+.lazo
+	&:after
+		content:' '
+		position:absolute
+		width:0
+		height:0
+		left:0
+		top:100%
+		border-width:5px 10px
+		border-style:solid
+		border-color:#666 #666 transparent transparent
+.lazo 
+	& img
+		top:10px
+		position:relative
+		left:-30px
+
+.slider
+	height 260px
+.ico-consama
+	height 70px
+.min-heigth-item
+	min-height 160px

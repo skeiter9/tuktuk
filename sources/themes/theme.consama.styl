@@ -1,6 +1,6 @@
 @import "__constants.styl"
-@import url('http://fonts.googleapis.com/css?family=Capriola');
-//@import url(http://fonts.googleapis.com/css?family=Artifika); Artifika
+//@import url('http://fonts.googleapis.com/css?family=Capriola');
+//@import url('http://fonts.googleapis.com/css?family=Artifika'); //Artifika
 //@import url(http://fonts.googleapis.com/css?family=Marko+One); Marko One
 //@import url(http://fonts.googleapis.com/css?family=Quando);
 
@@ -12,7 +12,7 @@ SUCCESS     = #EE6557
 ALERT       = #E74C3C
 /* ========== COLOR & BACKGROUNDS ====================== */
 LIGHT       = #f7f7f7
-DARK        = #282828
+DARK        = #131513
 COLOR       = #34495e
 
 BLACK       = #000
@@ -37,12 +37,13 @@ BORDER-RADIUS   = 8px
 body
   color: COLOR
   font-size: 14px
-  font-family: "Capriola", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "overlock", sans-serif;
   font-weight: normal
-  background: WHITE
+  background-image url('https://dl.dropboxusercontent.com/u/11334564/pattern-consama.png')
 
   &:not(.color):not(.dark) a
-    color: COLOR
+    //color: COLOR
+    color: WHITE
     &:not(.button):hover, &:not(.button):active
       color: THEME
 
@@ -57,23 +58,33 @@ body
   /* ====================== NAVIGATION ====================== */
   & nav[data-tuktuk=menu] > a
     border-radius (BORDER-RADIUS / 2)
+    transition all TRANSITION
+    text-shadow(1px 1px DARK)
     &:hover
-      background-color: rgba(0,0,0,0.05)
-    &.active
-      color: COLOR
-      background-color: rgba(0,0,0,0.1)
+      transition all TRANSITION
+      background-color: DARK
+      color THEME
       & .icon
         color: THEME
+    &.active
+      color: WHITE
+      //background-color: rgba(0,0,0,0.1)
+      background-color: DARK
+      & .icon
+        color: WHITE
     &:not(.active):not(:hover) > .icon, & small
-      opacity: 0.6
+      opacity: 0.7
       font-weight: 400
+      color white
 
   .bck.color, .bck.dark
     & nav[data-tuktuk=menu] > a
       &:hover
-        background-color: rgba(0,0,0,0.07)
+        //background-color: rgba(0,0,0,0.07)
+        background-color: DARK
       &.active
-        background-color: rgba(0,0,0,0.15)
+        //background-color: rgba(0,0,0,0.15)
+        background-color: DARK
 
   /* ====================== BACKGROUNDS ====================== */
   & .bck
@@ -140,6 +151,8 @@ body
       color: COLOR !important
     &.yellow
       color: YELLOW !important
+    &.green
+      color: GREEN !important
 
   /* ====================== FORM ====================== */
   & form, .form
@@ -210,18 +223,20 @@ body
       background-color: THEME
       border-radius BORDER-RADIUS
       box-shadow: inset 0 -2px 0 rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.2)
-      &:hover
-        box-shadow: inset 0 0 128px rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.2)
-      &:active
-        box-shadow inset 0 0 128px rgba(0,0,0,0.1),  inset 0 1px 0 rgba(0,0,0,0.1)
-      &.secondary
-        background-color: darken(SECONDARY, 25%)
-        color: SECONDARY
-       &.success
-        background-color: SUCCESS
-       &.alert
-        background-color: ALERT
-
+    &:hover
+      box-shadow: inset 0 0 128px rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.2)
+    &:active
+      box-shadow inset 0 0 128px rgba(0,0,0,0.1),  inset 0 1px 0 rgba(0,0,0,0.1)
+    &.secondary
+      background-color: darken(SECONDARY, 25%)
+      color: SECONDARY
+    &.green
+      background-color: darken(GREEN, 25%)
+      color: GREEN
+    &.success
+      background-color: SUCCESS
+    &.alert
+      background-color: ALERT
     &.transparent
       background: none !important
 

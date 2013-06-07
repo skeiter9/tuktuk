@@ -5,3 +5,6 @@ build
 site/package
 
 sources/stylesheets/sk9.styl
+sources/stylesheets/sk9.css
+sources/stylesheets/consama.styl
+sources/stylesheets/consama.css
